@@ -14,7 +14,7 @@ ollama run llama3
 
 
 # 1. Cloner le dépôt 
-git clone [votre_url_github]
+git clone "https://github.com/raphAmr/blablatron.git
 
 # 2. Créer l'environnement virtuel (utilisera Python 3.11)
 python -m venv venv
