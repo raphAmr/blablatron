@@ -158,9 +158,23 @@ if __name__ == "__main__":
                 # 3. Penser (c'est l'étape lente)
                 reponse_agent = appeler_agent(texte_utilisateur)
                 
+                """
+                # 2. JOUER LE SON "RÉFLEXION" (en boucle infinie)
+                if thinking_sound:
+                    thinking_sound.play(loops=-1)
+                
+                # 3. Penser (c'est l'étape lente)
+                reponse_agent = appeler_agent(texte_utilisateur)
+                
+                # 4. ARRÊTER LE SON "RÉFLEXION" (maintenant qu'il a fini de penser)
+                if thinking_sound:
+                    thinking_sound.stop()
+                """
+                
                 # 4. Parler
                 parler(reponse_agent)
 
     except KeyboardInterrupt:
         print("\nExtinction. Au revoir !")
+
         parler("Au revoir.")
